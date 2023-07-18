@@ -1,0 +1,189 @@
+body
+	  {
+		font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	  }
+
+	  p
+	  {
+		font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	  }
+
+	  table#tbl01
+      {
+       width: 100%;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+      }
+
+      th
+      {
+       padding: 2px;
+	   border-collapse: collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   text-align: left;
+      }
+	  
+      td
+      {
+       padding: 2px;
+	   border-collapse: collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+      }
+
+	  select
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	  }
+
+      table#t01
+	  {
+       width: 100%;
+       border: 1px solid;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+      }
+
+	 table#t02
+	  {
+       width: 100%;
+       border: 0px solid;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+      }
+
+      tr#tr01
+      {
+       border: 1px solid;
+      }
+
+      td#td01
+      {
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   width: 3%;
+      }
+
+    td#td02
+      {
+       border: 0px solid;
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   text-align: left;
+      }
+
+	 th#th01
+      {
+       border-left: 1px solid;
+	   border-top: 1px solid;
+	   border-bottom: 1px solid;
+	   border-right: 0px;
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   width: 2%;
+      }
+
+	 th#th02
+      {
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   width: 35%;
+	   text-align: center;
+      }
+
+      .divtextarea
+	  {
+       -moz-appearance: textfield-multiline;
+       -webkit-appearance: textarea;
+       border: 1px solid gray;
+       font: medium -moz-fixed;
+       font: -webkit-small-control;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+       height: 60px;
+	   width: 700px;
+       line-height:15px;
+       overflow: auto;
+       padding: 2px;
+       resize: both;
+      }
+
+	  input
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: middle;
+	  }
+
+	  h3, h4
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   margin-top: .1em;
+       margin-bottom: .1em;
+	  }
+
+	h5
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   margin-top: .1em;
+       margin-bottom: .1em;
+	  }
+	  
+	  h2
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   margin-top: .3em;
+       margin-bottom: .3em;
+	  }
+
+	 h1
+	 {
+	  font-family: "Nunito", "Open Sans", sans-serif;
+	  margin-top: .3em;
+      margin-bottom: .1em;
+	 }
+
+	 td#td99
+	  {
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   text-align: left;
+	  }
+	  
+	td#td03
+      {
+       border: 0px solid;
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   text-align: right;
+      }
+	  
+	td#td04
+      {
+       border: 0px solid;
+       padding:2px;
+	   border-collapse:collapse;
+	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-size: 90%;
+	   vertical-align: top;
+	   text-align: left;
+      }
+	  .divsubmit { width:100%; height:auto; margin:10px 4px; text-align:center;}
+	  .divsubmit button { padding:6px 4px; background:#060; border:1px solid #066; color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:600;}
+      .custom-pdf{padding: 50px;}
