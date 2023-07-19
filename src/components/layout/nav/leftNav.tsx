@@ -60,6 +60,12 @@ function LeftNav() {
                         <span>Signature</span>
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link className="nav-link" href="/pickupandExchange">
+                        <i className="ri-caravan-line"></i>
+                        <span>PickupandExchange</span>
+                    </Link>
+                </li>
             </ul>
         </aside>
     )
