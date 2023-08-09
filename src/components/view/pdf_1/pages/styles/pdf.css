@@ -1,12 +1,12 @@
 body
 	  {
-		font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	  }
 
 	  p
 	  {
-		font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	  }
 
@@ -14,14 +14,14 @@ body
       {
        width: 100%;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
       }
 
       th
       {
        padding: 2px;
 	   border-collapse: collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   text-align: left;
       }
@@ -30,13 +30,13 @@ body
       {
        padding: 2px;
 	   border-collapse: collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
       }
 
 	  select
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	  }
 
@@ -44,14 +44,14 @@ body
 	  {
        width: 100%;
        border: 1px solid;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
       }
 
 	 table#t02
 	  {
        width: 100%;
        border: 0px solid;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
       }
 
       tr#tr01
@@ -63,7 +63,7 @@ body
       {
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   width: 3%;
@@ -74,7 +74,7 @@ body
        border: 0px solid;
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   text-align: left;
@@ -88,7 +88,7 @@ body
 	   border-right: 0px;
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   width: 2%;
@@ -98,7 +98,7 @@ body
       {
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   width: 35%;
@@ -112,7 +112,7 @@ body
        border: 1px solid gray;
        font: medium -moz-fixed;
        font: -webkit-small-control;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
        height: 60px;
 	   width: 700px;
@@ -124,42 +124,42 @@ body
 
 	  input
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: middle;
 	  }
 
 	  h3, h4
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   margin-top: .1em;
        margin-bottom: .1em;
 	  }
 
 	h5
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   margin-top: .1em;
        margin-bottom: .1em;
 	  }
 	  
 	  h2
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   margin-top: .3em;
        margin-bottom: .3em;
 	  }
 
 	 h1
 	 {
-	  font-family: "Nunito", "Open Sans", sans-serif;
+	  font-family: arial, verdana;
 	  margin-top: .3em;
       margin-bottom: .1em;
 	 }
 
 	 td#td99
 	  {
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   text-align: left;
 	  }
 	  
@@ -168,7 +168,7 @@ body
        border: 0px solid;
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   text-align: right;
@@ -179,7 +179,7 @@ body
        border: 0px solid;
        padding:2px;
 	   border-collapse:collapse;
-	   font-family: "Nunito", "Open Sans", sans-serif;
+	   font-family: arial, verdana;
 	   font-size: 90%;
 	   vertical-align: top;
 	   text-align: left;

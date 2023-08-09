@@ -4,12 +4,14 @@ import Validation from '@/components/common/validationComponent';
 const TYPE_NUMBER = 'number';
 
 function CustomInput(props: any) {
-const {fileldName, label, handleChange, title, fileldValue, isRequired, disabled, readonly, type, placeholder, isError = true, min, max, validation, divClassName, validationType = "field", regExp, minLength} = props;
-
-let VALIDATION_DATA = { field: label, value: fileldValue || '', isError, validationType, errorClass: fileldName + '_error',}
+const {fileldName, label, handleChange, title, fileldValue, isRequired, disabled, readonly, type, placeholder, isError = true, min, max, validation, divClassName} = props;
+let VALIDATION_DATA = {};
+if(!!validation){
+  const {validationType = "field", regExp, minLength} = validation;
+  VALIDATION_DATA = {...VALIDATION_DATA, field: label, value: fileldValue || '', isError, validationType, errorClass: fileldName + '_error',}
   // @ts-ignore
   VALIDATION_DATA = !!regExp === true ? {...VALIDATION_DATA, regExp} : VALIDATION_DATA;
-
+};
   let DEFAULT_PROPS = {type: 'text', className: 'form-control form-control-sm'};
   // @ts-ignore
   DEFAULT_PROPS = !!type === true ? {...DEFAULT_PROPS, type} : DEFAULT_PROPS; 
@@ -39,7 +41,7 @@ let VALIDATION_DATA = { field: label, value: fileldValue || '', isError, validat
       {!!label && <label className={!!divClassName ? divClassName : "form-label"} >{label}{!!isRequired && <span>*</span>}</label>}
       {INPUT()}
       {/* @ts-ignore */}
-      {(!!isRequired || !!validationType) && <Validation data={{...VALIDATION_DATA}} />}
+      {!!validation && <Validation data={{...VALIDATION_DATA}} />}
     </>
   )
 }

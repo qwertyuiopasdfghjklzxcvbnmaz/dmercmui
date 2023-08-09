@@ -1,11 +1,16 @@
 "use client"
 import React, { Component } from 'react';
+import { saveStateObject } from './configSignature';
 import SignatureCanvas  from 'react-signature-canvas'
-import './style.css'
+// import SignaturePad  from 'react-signature-canvas'
+import './style/style.css'
+// import styles from './style/style.css'
 class SignatureModal extends Component {
   constructor(props) {
     super(props);
-    this.state={}
+    this.state={
+      ...saveStateObject
+    }
   }
 
   state = { trimmedDataURL: null }

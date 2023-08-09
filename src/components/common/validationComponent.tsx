@@ -72,6 +72,10 @@ class Validation extends Component {
                     if (dataFields[val.fieldName] === false)
                         response = 0;
                     break;
+                case 'date':
+                    if (dataFields[val.fieldName] === '' || dataFields[val.fieldName] === null)
+                        response = 0;
+                    break;
                 default:
                     response;
             }
@@ -88,17 +92,17 @@ class Validation extends Component {
                     return <>
                         {value === '' || value === null || value === undefined || value.length === 0 ?
                             <div className="text-danger" >
-                                Please {validationType === 'selectfield' ? 'Select' : 'Enter'} {field}.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Please {validationType === 'selectfield' ? 'Select' : 'Enter'} {field}.
                             </div>
                             :
                             !!minLength && value.length < minLength ?
                                 <div className="text-danger" >
-                                    Please Enter Minimum {minLength} Characters.
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Please Enter Minimum {minLength} Characters.
                                 </div>
                                 :
                                 value.length > 256 &&
                                 <div className="text-danger" >
-                                    Enter Valid {field} should not be more than 256 characters
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid {field} should not be more than 256 characters
                                 </div>
                         }
                     </>
@@ -110,17 +114,17 @@ class Validation extends Component {
                     return <>
                         {value === '' || value === null || value === undefined || value.length === 0 ?
                             <div className="text-danger" >
-                                Please Select {validationType === 'selectfield' ? 'Select' : 'Enter'} {field}.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Please Select {validationType === 'selectfield' ? 'Select' : 'Enter'} {field}.
                             </div>
                             :
                             !!minLength && value.length < minLength ?
                                 <div className="text-danger" >
-                                    Please Enter Minimum {minLength} Characters.
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Please Enter Minimum {minLength} Characters.
                                 </div>
                                 :
                                 returnStrRegExp === false &&
                                 <div className="text-danger" >
-                                    Enter Valid {field}.
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid {field}.
                                 </div>
                         }
                     </>
@@ -132,7 +136,7 @@ class Validation extends Component {
                     return <>
                         {value !== '' && value.length !== 0 && returnStrRegExp === false &&
                             <div className="text-danger" >
-                                Enter Valid {field}.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid {field}.
                             </div>
                         }
                     </>
@@ -145,12 +149,12 @@ class Validation extends Component {
                     return <>
                         {value === '' || value === null ?
                             <div className="text-danger" >
-                                Please Enter {field}.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Please Enter {field}.
                             </div>
                             :
                             isEmail === false &&
                             <div className="text-danger" >
-                                Enter Valid Email.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid Email.
                             </div>
                         }
                     </>
@@ -163,7 +167,7 @@ class Validation extends Component {
                     return <>
                         {value !== '' && isEmail === false &&
                             <div className="text-danger" >
-                                Enter Valid Email.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid Email.
                             </div>
                         }
                     </>
@@ -181,12 +185,12 @@ class Validation extends Component {
                     return <>
                         {value === '' || value === null ?
                             <div className="text-danger" >
-                                Please Enter {field}.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Please Enter {field}.
                             </div>
                             :
                             isUrl === false &&
                             <div className="text-danger" >
-                                Enter Valid Url.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid Url.
                             </div>
                         }
                     </>
@@ -204,7 +208,7 @@ class Validation extends Component {
                     return <>
                         {value !== '' && isUrl === false &&
                             <div className="text-danger" >
-                                Enter Valid Url.
+                                <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid Url.
                             </div>
                         }
                     </>
@@ -215,8 +219,35 @@ class Validation extends Component {
                         return <>
                             {value === false &&
                                 <div className="text-danger" >
-                                    Please Check {field}.
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Please Check {field}.
                                 </div>
+                            }
+                        </>
+                    }
+                    break;
+                case 'date':
+                    if (isError === 1) {
+                        return <>
+                            {(value === '' ||  value === null) ?
+                                <div className="text-danger" >
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Please Enter {field}.
+                                </div>
+                                :
+                                // @ts-ignore
+                                this.props.data.startDate > this.props.data.endDate &&
+                                <div className="text-danger" >
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid {field}.
+                                </div>
+                            }
+                        </>
+                    }else if(isError === 0){
+                        return <>
+                            {
+                                // @ts-ignore
+                                (this.props.data.endDate !== '' && this.props.data.startDate > this.props.data.endDate) &&
+                                <div className="text-danger" >
+                                    <i className="bi bi-exclamation-triangle-fill"></i> Enter Valid {field}.
+                                </div> 
                             }
                         </>
                     }

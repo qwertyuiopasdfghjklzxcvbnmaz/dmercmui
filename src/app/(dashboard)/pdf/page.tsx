@@ -22,10 +22,8 @@ function Page() {
                                     <li className="list-group-item"><Link href="/patien_home_assessment" className='btn btn-light btn-sm' >Standard_Home_Assessment_2_v2_(9-25-15)</Link></li>
                                     <li className="list-group-item"><Link href="/deliveryreceipts" className='btn btn-light btn-sm' >Delivery Receipts</Link></li>
                                     <li className="list-group-item"><Link href="/signature" className='btn btn-light btn-sm' >Signature</Link></li>
-                                    <li className="list-group-item"><Link href="/pickupExchange" className='btn btn-light btn-sm' >Pickup Exchange</Link></li>
                                     <li className="list-group-item"><Link href="/abn" className='btn btn-light btn-sm' >ABN</Link></li>
-                                    <li className="list-group-item"><Link href="/writtenOrder" className='btn btn-light btn-sm' >Written Order Form</Link></li>
-                                    <li className="list-group-item"><Link href="/pickupExchangeTicket" className='btn btn-light btn-sm' >Pickup Exchange Ticket</Link></li>
+                                    <li className="list-group-item"><Link href="/pickupexchange" className='btn btn-light btn-sm' >Pickup Exchange</Link></li>
                                 </ul>
                             </div>
                         </div>

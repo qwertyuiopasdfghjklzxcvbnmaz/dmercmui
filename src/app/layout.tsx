@@ -16,7 +16,7 @@ export const metadata = {
 }
 
 const poppins = Poppins({
-  weight: ['300'],
+  weight: ['400'],
   subsets: ['latin']
 }) 
 //===============OR========================
@@ -29,8 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
-      <body ><Providers>{children}</Providers></body>
+      <body className={poppins.className}><Providers>{children}</Providers></body>
       <Script type="text/javascript" src="assets/js/jquery-3.5.1.min.js" />
       <Script type="text/javascript" src="assets/js/jquery-ui.min.js" />
       <Script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" />

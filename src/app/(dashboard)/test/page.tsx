@@ -5,6 +5,7 @@ import { decrement, increment } from './features/counterSlice';
 import {useAppSelector, useAppDispatch} from '../../../hooks';
 
 import CustomDatepicker from '../../../components/common/datepickerComponent';
+import CustomSelect from '../../../components/common/customSelect';
 
 import { toast } from 'react-toastify';
 
@@ -15,6 +16,12 @@ import {showNotify} from './showNotify';
 // import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";
 
+const options = [
+    {id: 1, title: 'arin'},
+    {id: 2, title: 'adrish'},
+    {id: 3, title: 'Sumana'}
+]
+
 function Page() {
     const count = useAppSelector((state) => state.counter.value);
     const dispatch = useAppDispatch()
@@ -23,6 +30,11 @@ function Page() {
 
     const _handleChange = (event: any) =>{
         setStartDate(event.target.value)
+    }
+
+    const _handleChangeOption = (event: any) =>{
+        const {name, value} = event.target;
+        console.log({name, value})
     }
 
 
@@ -73,6 +85,14 @@ function Page() {
                                     </div>
                                     <div className='col-md-4'>
                                         <button onClick={notify}>Notify!</button>
+                                    </div>
+                                    <div className='col-md-4'>
+                                        <CustomSelect 
+                                            optArray={options}
+                                            name="fname"
+                                            handleChange={_handleChangeOption}
+                                            // multi={true}
+                                        />
                                     </div>
                                 </div>
                             </div>

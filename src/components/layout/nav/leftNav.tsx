@@ -54,16 +54,16 @@ function LeftNav() {
                         <span>PDF</span>
                     </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link" href="/signature">
                         <i className="ri-caravan-line"></i>
                         <span>Signature</span>
                     </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                    <Link className="nav-link" href="/pickupandExchange">
+                    <Link className="nav-link" href="/autofrom">
                         <i className="ri-caravan-line"></i>
-                        <span>PickupandExchange</span>
+                        <span>Auto From</span>
                     </Link>
                 </li>
             </ul>
